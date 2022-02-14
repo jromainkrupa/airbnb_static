@@ -1,0 +1,8 @@
+<h1>flats</h1>
+<% @flats.each do |flat| %>
+  <%= render "flats/flat",
+             image_url: flat["imageUrl"],
+             name: flat["name"],
+              id: flat["id"]%>
+
+<% end %>
